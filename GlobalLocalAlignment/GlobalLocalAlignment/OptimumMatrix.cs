@@ -28,7 +28,7 @@ namespace GlobalLocalAlignment
         }
         public OptimumMatrix(char[] topRow, char[] sideCol) //build matrix, store sequences
         {
-            this.theMatrix = new int[topRow.Length + 1, sideCol.Length + 1];
+            this.theMatrix = new int[topRow.Length, sideCol.Length];
             if (topRow.Length == sideCol.Length)
             {
                 for (int i = 0; i < topRow.Length; i++)
@@ -39,15 +39,16 @@ namespace GlobalLocalAlignment
             }
             else
             {
-                for (int i = 0; i < topRow.Length; i++)
-                {
-                    this.theMatrix[0, i] = 10;
-                }
                 for (int i = 0; i < sideCol.Length; i++)
                 {
-                    this.theMatrix[i, 0] = 100;
+                    this.theMatrix[0, i] = 100;
+                }
+                for (int i = 0; i < topRow.Length; i++)
+                {
+                    this.theMatrix[i, 0] = 10;
                 }
             }
+            this.theMatrix[0, 0] = 0;
             this.top = topRow;
             this.side = sideCol;
         }
@@ -66,6 +67,40 @@ namespace GlobalLocalAlignment
             this.theMatrix[row, column] = score;
         }
 
+        public string[] calcOptPathFrom(int row, int col)
+        {
+            string sideString = "", topString = "";
+
+            while (true)
+            {
+                if ((this.theMatrix[row, col] / 100) == 1)
+                { 
+                    topString = this.top[row] + topString;
+                    sideString = '-' + sideString;
+                    
+                    row--;
+                }
+                else if ((this.theMatrix[row, col] / 10) == 1)
+                {
+                   topString = '-' + topString;
+                    sideString = this.side[col] + sideString;
+                    col--;
+                }
+                else
+                {
+                    topString = this.top[row] + topString;
+                    sideString = this.side[col] + sideString;
+                    if (row != 0) row--;
+                    if (col != 0) col--;
+                }
+                if (row == 0 && col == 0)
+                {
+                    break;
+                }
+            }
+            string[] answer = { topString, sideString };
+            return answer;
+        }
     }
 
     public class OptimumClassException : Exception

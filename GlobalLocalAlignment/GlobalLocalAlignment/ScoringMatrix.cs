@@ -25,7 +25,7 @@ namespace GlobalLocalAlignment
         }
         public ScoringMatrix(char[] topRow, char[] sideCol) //build matrix, store sequences, use default scoring system
         {
-            this.theMatrix = new int[topRow.Length + 1, sideCol.Length + 1];
+            this.theMatrix = new int[topRow.Length, sideCol.Length];
             if (topRow.Length == sideCol.Length)
             {
                 for (int i = 0; i < topRow.Length; i++)
@@ -35,11 +35,11 @@ namespace GlobalLocalAlignment
             }
             else
             {
-                for (int i = 0; i < topRow.Length; i++)
+                for (int i = 0; i < sideCol.Length; i++)
                 {
                     this.theMatrix[0, i] = i * this.scoringSystem[2];
                 }
-                for (int i = 0; i < sideCol.Length; i++)
+                for (int i = 0; i < topRow.Length; i++)
                 {
                     this.theMatrix[i, 0] = i * this.scoringSystem[2];
                 }
@@ -49,7 +49,7 @@ namespace GlobalLocalAlignment
         }
         public ScoringMatrix(char[] topRow, char[] sideCol, int[] scoringSystem) //build matrix, store sequences, use custom scoring, expecting scores in the form of int[match,mismatch,indelOpen,indelContinue]
         {
-            this.theMatrix = new int[topRow.Length + 1, sideCol.Length + 1];
+            this.theMatrix = new int[topRow.Length, sideCol.Length];
             this.scoringSystem = scoringSystem;
             if (topRow.Length == sideCol.Length)
             {
@@ -84,7 +84,6 @@ namespace GlobalLocalAlignment
          */
         public int calcCell(int row, int col)
         {
-            if (this.theMatrix[row, col] != null) { return -1; }//site says "The default values of numeric array elements are set to zero, and reference elements are set to null." should i be checking 0 or null?
             if (row == 0 || col == 0) { return -1; } //these should be filled in by default, also will throw error if continue
 
             int diagnol = this.theMatrix[row - 1, col - 1] + ((this.top[row] == this.side[col]) ? (this.scoringSystem[0]) : (this.scoringSystem[1]));
@@ -119,7 +118,20 @@ namespace GlobalLocalAlignment
 
         public int getPos(int row, int col) { return this.theMatrix[row, col]; }
 
-
+        public int[] getMaxScorePos()
+        {
+            int[] max = new int[2];
+            int highest = -999999999;
+            for (int i = 0; i < this.top.Length; i++)
+            {
+                if (this.theMatrix[i, this.side.Length - 1] > highest) { max[0] = i; max[1] = this.side.Length - 1; highest = this.theMatrix[i, this.side.Length - 1]; }
+            }
+            for (int i = 0; i < this.side.Length; i++)
+            {
+                if (this.theMatrix[this.top.Length - 1, i] > highest) { max[0] = this.top.Length - 1; max[1] = i; highest = this.theMatrix[this.top.Length - 1, i]; }
+            }
+            return max;
+        }
     }
     public class ScoringClassException : Exception
     {

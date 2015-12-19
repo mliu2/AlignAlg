@@ -1,0 +1,6 @@
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.exe.config
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.exe
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.pdb
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.exe
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.pdb

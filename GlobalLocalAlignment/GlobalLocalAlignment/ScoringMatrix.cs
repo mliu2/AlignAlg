@@ -121,12 +121,16 @@ namespace GlobalLocalAlignment
         * Side Effect: inputs the calculated number into that cell in theMatrix
         * 
         * Note: (top|left|diagnol) == bits, agreed that 101 implies number was attained from top and diagnol, 1 means attained only from diagnol, etc
-        * 
+        * NOTE: Should start at 0,0 as opposed to global alignment which starts at 1,1
         * TODO: open vs. continue indel logic
         */
         public int calcCellLocal(int row, int col)
         {
-            if (row == 0 || col == 0) { return -1; } //these should be filled in by default, also will throw error if continue
+            //Local alignment needs to reset first row and column 
+            if (row == 0 || col == 0) {
+                this.theMatrix[row, col] = 0;
+                return -1;
+            } 
 
             int diagnol = this.theMatrix[row - 1, col - 1] + ((this.top[row] == this.side[col]) ? (this.scoringSystem[0]) : (this.scoringSystem[1]));
             int top = this.theMatrix[row - 1, col] + (this.scoringSystem[2]); //TODO HERE: going with indelOpen for now

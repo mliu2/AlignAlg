@@ -7,3 +7,9 @@ C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\G
 C:\Users\Neru\Documents\GitHub\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.exe.config
 C:\Users\Neru\Documents\GitHub\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.exe
 C:\Users\Neru\Documents\GitHub\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.pdb
+C:\Users\Melissa\dev\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.exe.config
+C:\Users\Melissa\dev\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.exe
+C:\Users\Melissa\dev\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.pdb
+C:\Users\Melissa\dev\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.exe
+C:\Users\Melissa\dev\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.pdb
+C:\Users\Melissa\dev\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.csprojResolveAssemblyReference.cache

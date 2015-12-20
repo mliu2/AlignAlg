@@ -1,0 +1,18 @@
+U:\Visual Studio\Analysis\Analysis\bin\Debug\Analysis.exe.config
+U:\Visual Studio\Analysis\Analysis\obj\Debug\Analysis.csprojResolveAssemblyReference.cache
+U:\Visual Studio\Analysis\Analysis\obj\Debug\Analysis.Form1.resources
+U:\Visual Studio\Analysis\Analysis\obj\Debug\Analysis.Properties.Resources.resources
+U:\Visual Studio\Analysis\Analysis\obj\Debug\Analysis.csproj.GenerateResource.Cache
+U:\Visual Studio\Analysis\Analysis\bin\Debug\Analysis.exe
+U:\Visual Studio\Analysis\Analysis\bin\Debug\Analysis.pdb
+U:\Visual Studio\Analysis\Analysis\obj\Debug\Analysis.exe
+U:\Visual Studio\Analysis\Analysis\obj\Debug\Analysis.pdb
+E:\Analysis\Analysis\bin\Debug\Analysis.exe.config
+E:\Analysis\Analysis\obj\Debug\Analysis.exe
+E:\Analysis\Analysis\obj\Debug\Analysis.pdb
+E:\Analysis\Analysis\bin\Debug\Analysis.exe
+E:\Analysis\Analysis\bin\Debug\Analysis.pdb
+E:\Analysis\Analysis\obj\Debug\Analysis.csprojResolveAssemblyReference.cache
+E:\Analysis\Analysis\obj\Debug\Analysis.Form1.resources
+E:\Analysis\Analysis\obj\Debug\Analysis.Properties.Resources.resources
+E:\Analysis\Analysis\obj\Debug\Analysis.csproj.GenerateResource.Cache

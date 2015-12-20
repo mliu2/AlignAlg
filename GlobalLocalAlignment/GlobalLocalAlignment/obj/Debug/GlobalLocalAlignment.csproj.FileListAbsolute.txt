@@ -4,3 +4,6 @@ C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\G
 C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.pdb
 C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.exe
 C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.pdb
+C:\Users\Neru\Documents\GitHub\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\bin\Debug\GlobalLocalAlignment.exe.config
+C:\Users\Neru\Documents\GitHub\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.exe
+C:\Users\Neru\Documents\GitHub\AlignAlg\GlobalLocalAlignment\GlobalLocalAlignment\obj\Debug\GlobalLocalAlignment.pdb

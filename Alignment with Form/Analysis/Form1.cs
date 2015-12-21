@@ -62,7 +62,7 @@ namespace Analysis
             else
             {
                 // gap options not selected
-                results.Text = "Please select if this alignment should count gaps or not";
+                results.Text = "Please select if this alignment should count gaps or not" + "\r\n";
                 return;
             }
 
@@ -93,7 +93,7 @@ namespace Analysis
             else
             {
                 // alignment type options not selected
-                results.Text = "Please select if this alignment should be global or local";
+                results.Text = "Please select if this alignment should be global or local" + "\r\n";
                 return;
             }
 

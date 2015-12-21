@@ -46,30 +46,18 @@ namespace Analysis
             char[] first = ("-" + Regex.Replace(seq1.Text, @"\s+", "").ToUpper()).ToCharArray();
             char[] second = ("-" + Regex.Replace(seq2.Text, @"\s+", "").ToUpper()).ToCharArray();
 
-            if (isGlobal.Checked)
-            {
-                // global alignment
-
-            }
-            else if (isLocal.Checked)
-            {
-                // local alignment
-
-            }
-            else
-            {
-                // alignment type options not selected
-                results.Text = "Please select if this alignment should be global or local";
-                return;
-            }
-
+            int[] scoreSystem = new int[3];
             if (countGaps.Checked)
             {
-                // gaps should be counted
+                scoreSystem[0] = 1;
+                scoreSystem[1] = -1;
+                scoreSystem[2] = -2;
             }
             else if (countNoGaps.Checked)
             {
-                // gaps should NOT be counted
+                scoreSystem[0] = 1;
+                scoreSystem[1] = -1;
+                scoreSystem[2] = 0;
             }
             else
             {
@@ -78,19 +66,40 @@ namespace Analysis
                 return;
             }
 
-            ScoringMatrix simon = new ScoringMatrix(first, second);
+            ScoringMatrix simon = new ScoringMatrix(first, second, scoreSystem);
             OptimumMatrix jack = new OptimumMatrix(first, second);
 
-            for (int i = 1; i < first.Length; i++)
+            
+            if (isGlobal.Checked)
             {
-                for (int j = 1; j < second.Length; j++)
+                for (int i = 1; i < first.Length; i++)
                 {
-                    jack.setScore(i, j, simon.calcCell(i, j));
+                    for (int j = 1; j < second.Length; j++)
+                    {
+                        jack.setScore(i, j, simon.calcCell(i, j));
+                    }
                 }
             }
+            else if (isLocal.Checked)
+            {
+                for (int i = 1; i < first.Length; i++)
+                {
+                    for (int j = 1; j < second.Length; j++)
+                    {
+                        jack.setScore(i, j, simon.calcCellLocal(i, j));
+                    }
+                }
+            }
+            else
+            {
+                // alignment type options not selected
+                results.Text = "Please select if this alignment should be global or local";
+                return;
+            }
+
             int[] maxPos = simon.getMaxScorePos();
             string[] paul = jack.calcOptPathFrom(maxPos[0], maxPos[1]);
-            results.Text += paul[0] + "\r\n" + paul[1]; 
+            results.Text += paul[0] + "\r\n" + paul[1] + "\r\n\r\n";
         }
     }
 }

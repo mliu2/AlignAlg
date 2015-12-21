@@ -16,3 +16,12 @@ E:\Analysis\Analysis\obj\Debug\Analysis.csprojResolveAssemblyReference.cache
 E:\Analysis\Analysis\obj\Debug\Analysis.Form1.resources
 E:\Analysis\Analysis\obj\Debug\Analysis.Properties.Resources.resources
 E:\Analysis\Analysis\obj\Debug\Analysis.csproj.GenerateResource.Cache
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\bin\Debug\Analysis.exe.config
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\obj\Debug\Analysis.exe
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\obj\Debug\Analysis.pdb
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\bin\Debug\Analysis.exe
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\bin\Debug\Analysis.pdb
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\obj\Debug\Analysis.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\obj\Debug\Analysis.Form1.resources
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\obj\Debug\Analysis.Properties.Resources.resources
+C:\Users\Andrew\Documents\2015 Fall\ourAlignment\AlignAlg\Alignment with Form\Analysis\obj\Debug\Analysis.csproj.GenerateResource.Cache

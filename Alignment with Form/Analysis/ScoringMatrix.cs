@@ -60,11 +60,11 @@ namespace GlobalLocalAlignment
             }
             else
             {
-                for (int i = 0; i < topRow.Length; i++)
+                for (int i = 0; i < sideCol.Length; i++)
                 {
                     this.theMatrix[0, i] = i * this.scoringSystem[2];
                 }
-                for (int i = 0; i < sideCol.Length; i++)
+                for (int i = 0; i < topRow.Length; i++)
                 {
                     this.theMatrix[i, 0] = i * this.scoringSystem[2];
                 }
